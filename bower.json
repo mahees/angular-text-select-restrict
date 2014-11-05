@@ -1,0 +1,11 @@
+{
+	"name": "angular-text-select-restrict",
+	"version": "0.0.1",
+	"main": "src/js/angular-text-select-restrict.js",
+	"keywords": ["angular text highlight restrict", "angular text pattern highlight select", "angular text range highlight select"],
+	"ignore": [".bowerrc", ".gitignore", ".jshintignore", ".jshintrc", "bower.json", "gruntfile.js", "package.json", "README.md"],
+	"dependencies": {
+		"angular": "*"
+	},
+	"devDependencies": {}
+}
