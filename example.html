@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Angular Input Selector Example</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular.min.js"></script>
+		<script src="src/js/angular-text-select-restrict.js"></script>
+		<script>
+			angular.module('app', ['text-select-restrict']);
+		</script>
+	</head>
+	<body ng-app="app">
+		<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<p>
+			<label>text-select-restrict</label>
+			<br />
+			<input type="text" value="blah blah blah" text-select-restrict />
+		</p>
+		<p>
+			<label>text-select-restrict selector-allow-pattern="[0-9]*"</label>
+			<br />
+			<input type="text" value="blahb1123lah123124213asdfablah" text-select-restrict selector-allow-pattern="[0-9]+" />
+		</p>
+		<p>
+			<label>text-select-restrict selector-allow-start="2"</label>
+			<br />
+			<input type="text" value="blah blah blah" text-select-restrict selector-allow-start="2" />
+		</p>
+		<p>
+			<label>text-select-restrict selector-allow-end="5"</label>
+			<br />
+			<input type="text" value="blah blah blah" text-select-restrict selector-allow-end="5" />
+		</p>
+		<p>
+			<label>text-select-restrict selector-allow-start="2" selector-allow-end="5"</label>
+			<br />
+			<input type="text" value="blah blah blah" text-select-restrict selector-allow-start="2" selector-allow-end="5" />
+		</p>
+		<p>
+			<label>text-select-restrict selector-allow-start="2" selector-allow-end="5"</label>
+			<br />
+			<input type="password" value="blah blah blah" text-select-restrict selector-allow-start="2" selector-allow-end="5" />
+		</p>
+		<p>
+			<label>text-select-restrict selector-allow-start="2" selector-allow-end="5"</label>
+			<br />
+			<textarea text-select-restrict selector-allow-start="1" selector-allow-end="3" >More blah blah blah</textarea>
+		</p>
+	</body>
+</html>
