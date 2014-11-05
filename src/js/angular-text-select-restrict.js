@@ -43,6 +43,12 @@
 					return (attr && attr != "" && parseInt(attr) >= 0);
 				};
 
+				
+				//https://gist.github.com/beiyuu/2029907
+				//http://jsfiddle.net/ZyDjV/75/
+				//http://richonrails.com/articles/text-area-manipulation-with-jquery
+				//http://www.sitepoint.com/6-jquery-cursor-functions/
+				//http://stackoverflow.com/questions/4609405/set-focus-after-last-character-in-text-box
 				scope.selectRange = function(e, start, end) {
 					if (!e) {
 						return;
@@ -63,6 +69,7 @@
 					}
 				};
 
+				//TODO: this doesnt fire on iPad or iPhone (ios) devices
 				element.on('select', scope.updateSelection);
 			}
 		};
